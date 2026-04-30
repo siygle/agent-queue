@@ -1,0 +1,22 @@
+{
+  "name": "@siygle/agent-queue-hub-worker",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "wrangler deploy --dry-run --outdir dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "pnpm typecheck",
+    "lint": "pnpm typecheck",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@siygle/agent-queue-shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260429.0",
+    "wrangler": "^4.50.0"
+  }
+}

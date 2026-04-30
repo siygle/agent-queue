@@ -1,5 +1,6 @@
 name = "agent-queue-hub"
 main = "src/index.ts"
+account_id = "7c6f1bb62ffbca15bdd53b2e80ffefa7"
 compatibility_date = "2026-04-30"
 
 [[queues.producers]]
